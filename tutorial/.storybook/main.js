@@ -1,9 +1,8 @@
 /** @type { import('@storybook/nextjs').StorybookConfig } */
 const config = {
   stories: [
-    "../src/**/*.mdx",
-    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)", // Include .stories files in any directory under src
-    "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)", // Add this to include the stories folder
+    "../src/**/*.mdx", // Includes MDX files
+    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)", // Includes .stories files in any subfolder under src
   ],
   addons: [
     "@storybook/addon-essentials",
